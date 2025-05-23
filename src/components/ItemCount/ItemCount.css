@@ -2,17 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem; /* Mayor espacio entre los elementos para una distribución más clara */
+  gap: 1.2rem;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%; /* usa todo el ancho disponible */
+  box-sizing: border-box;
 }
 
 .Controls {
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+  justify-content: center;
 }
 
-.Button {
-  background-color: #5D9CEC; /* Azul suave (como en el ItemDetail) */
+.button { /* Cambié a minúsculas */
+  background-color: #5D9CEC;
   color: #fff;
   border: none;
   padding: 0.6rem 1rem;
@@ -20,22 +27,50 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: 60px;
+  min-width: 50px;
+  text-align: center;
+  flex-shrink: 0;
+  box-sizing: border-box; /* agregué */
 }
 
-.Button:hover {
-  background-color: #4a8bc2; /* Azul más oscuro para hover */
-  transform: scale(1.05); /* Efecto de zoom suave */
+.button:hover {
+  background-color: #4a8bc2;
+  transform: scale(1.05);
 }
 
-.Button:disabled {
-  background-color: #bdc3c7; /* Gris claro cuando está deshabilitado */
-  cursor: not-allowed; /* Cursor de no permitido */
+.button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
 }
 
 .Number {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2c3e50; /* Gris oscuro para que se vea nítido */
+  color: #2c3e50;
   text-align: center;
-  letter-spacing: 0.5px; /* Espaciado suave entre las letras para un toque más moderno */
+  letter-spacing: 0.5px;
+  min-width: 40px;
+  user-select: none;
+}
+
+/* Responsividad: para pantallas pequeñas */
+@media (max-width: 480px) {
+  .Counter {
+    max-width: 150px;
+    gap: 1rem;
+    padding: 0.8rem;
+  }
+
+  .button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    max-width: 50px;
+    min-width: 40px;
+  }
+
+  .Number {
+    font-size: 1.3rem;
+    min-width: 35px;
+  }
 }

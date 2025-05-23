@@ -1,0 +1,11 @@
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1d4ed8; /* Azul Tailwind */
+  opacity: 1;
+}
+

@@ -1,0 +1,75 @@
+.order-confirmation {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background: #ffffff; /* blanco limpio */
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  color: #333333;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.order-confirmation h2 {
+  font-family: "Anta", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #5D9CEC; /* azul suave */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.order-confirmation p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.order-confirmation strong {
+  color: #5D9CEC;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE DESIGN - order-confirmation */
+@media (max-width: 768px) {
+  .order-confirmation {
+    max-width: 90%;
+    padding: 25px 20px;
+  }
+
+  .order-confirmation h2 {
+    font-size: 2rem;
+  }
+
+  .order-confirmation p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-confirmation {
+    max-width: 95%;
+    padding: 20px 15px;
+  }
+
+  .order-confirmation h2 {
+    font-size: 1.7rem;
+  }
+
+  .order-confirmation p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,131 @@
+.checkout-form {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  font-family: "Saira", sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.checkout-form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.checkout-form h2,
+.checkout-form h3 {
+  text-align: center;
+  color: #333;
+  font-family: "Anta", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Sección de inputs organizada tipo grilla */
+.checkout-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Inputs que deben ocupar toda la fila */
+.checkout-full {
+  grid-column: 1 / -1;
+}
+
+/* Estilos de inputs y select */
+.checkout-form input,
+.checkout-form select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: "Saira", sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.checkout-form input::placeholder {
+  color: #aaa;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  border-color: #5D9CEC;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(93, 156, 236, 0.2);
+}
+
+/* Errores */
+.checkout-form .error {
+  color: #f87171;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+.checkout-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #5D9CEC;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #4a8bc2;
+  transform: scale(1.05);
+}
+
+.checkout-form button:disabled {
+  background-color: #a6bcd4;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE extra */
+@media (max-width: 480px) {
+  .checkout-form {
+    padding: 1.5rem;
+  }
+
+  .checkout-form h3 {
+    font-size: 1.1rem;
+  }
+
+  .checkout-form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .checkout-form {
+    padding: 1.8rem;
+  }
+
+  .checkout-form h2,
+  .checkout-form h3 {
+    font-size: 1.5rem;
+  }
+
+  .checkout-section {
+    gap: 0.8rem;
+  }
+
+  .checkout-form button {
+    font-size: 1.05rem;
+  }
+}

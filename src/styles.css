@@ -150,3 +150,276 @@ a {
     color: white !important;
     text-decoration: none !important;
 }
+
+/* Formulario de búsqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #3B82F6;
+    border-radius: 10px;
+    padding: 0.4rem 1rem;
+    max-width: 320px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.search-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.search-form input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    font-family: "Saira";
+    font-size: 18px;
+    color: #333;
+    padding-right: 0.5rem;
+    width: 600px;
+}
+
+.search-form input::placeholder {
+    color: #777;
+}
+
+.search-button {
+    background-color: #5D9CEC;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #5d9becda;
+    transform: scale(1.1);
+}
+
+.search-button svg {
+    font-size: 1rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.no-products-msg {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 2rem 0;
+}
+
+/* --- Media queries --- */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .custom-menu {
+    font-size: 18px;
+    padding: 7px 10px;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .custom-menu .ant-menu-item {
+    min-width: 110px;
+  }
+
+  .search-form {
+    max-width: 250px;
+  }
+
+  .search-form input {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* 🔧 NUEVO: Fila superior con logo y hamburguesa alineados */
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 100%;
+    padding: 10px 12px;
+  }
+
+  .brand {
+    flex: none;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #3B82F6;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .hamburger-btn:hover {
+    color: #60A5FA;
+  }
+
+  .custom-menu {
+    flex: 1 1 100%;
+    justify-content: center;
+    font-size: 16px;
+    padding: 5px 0;
+    overflow-x: auto;
+  }
+
+  .custom-menu .ant-menu-item {
+    min-width: 100px;
+    padding: 8px 12px;
+  }
+
+  .search-form {
+    max-width: 100%;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-form input {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: 1.3rem;
+  }
+
+  .custom-menu {
+    font-size: 14px;
+  }
+
+  .custom-menu .ant-menu-item {
+    min-width: 80px;
+    padding: 6px 8px;
+  }
+
+  .search-form input {
+    font-size: 14px;
+  }
+
+  .search-button {
+    padding: 0.4rem;
+  }
+}
+
+/* Menú hamburguesa móvil */
+@media (max-width: 768px) {
+  .menu-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .menu-container .custom-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-container.open .custom-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E2A38;
+    padding: 1rem;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+    border-top: 1px solid #3B82F6;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .custom-menu .ant-menu-item,
+  .custom-menu .ant-menu-submenu-title {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .custom-menu .ant-menu-submenu {
+    background-color: #263544;
+    margin: 0.3rem 0;
+  }
+
+  .custom-menu .ant-menu-submenu-title:hover {
+    background-color: #3B82F6;
+  }
+
+  .custom-menu .ant-menu-submenu .ant-menu-item {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Animación desplegable */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mostrar hamburguesa solo en móviles */
+.hamburger-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: flex;
+  }
+}
+
+/* Evita scroll del body cuando el menú está abierto */
+body.menu-open {
+  overflow: hidden;
+}

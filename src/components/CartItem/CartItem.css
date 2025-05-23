@@ -1,0 +1,121 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Saira', sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cart-item-img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    flex: 1;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.cart-item-info h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+
+.cart-item-info .price,
+.cart-item-info .subtotal {
+    font-size: 0.95rem;
+    color: #5D9CEC;
+    margin: 0;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-controls button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: #d0d0d0;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: #ff4d4f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.remove-btn:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN - cart-item */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+  }
+
+  .cart-item-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-item-info {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .quantity-controls {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item-img img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cart-item-info h4 {
+    font-size: 1rem;
+  }
+
+  .cart-item-info .price,
+  .cart-item-info .subtotal {
+    font-size: 0.85rem;
+  }
+
+  .quantity-controls button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .remove-btn {
+    font-size: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { getProducts } from '../../../asyncMock';
+import { getTopProducts } from '../services/firebase/productService';
 import '../Footer/Footer.css';
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const productosData = await getProducts();
+        const productosData = await getTopProducts();
         setProductos(productosData);
       } catch (error) {
         console.error('Error al cargar productos:', error);

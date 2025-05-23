@@ -22,3 +22,28 @@
     font-size: 1.8rem; /* Tamaño del ícono */
     color: white;
 }
+
+/* RESPONSIVE DESIGN - cart-widget */
+@media (max-width: 768px) {
+  .cart-widget {
+    width: 45px;
+    height: 45px;
+    padding: 0.6rem;
+  }
+
+  .cart-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-widget {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+  }
+
+  .cart-icon {
+    font-size: 1.3rem;
+  }
+}

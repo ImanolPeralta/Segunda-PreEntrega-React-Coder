@@ -24,18 +24,32 @@
 @media (max-width: 900px) {
   .item-list {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+  }
+  .item-card {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .item-list {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    gap: 1rem;
+  }
+  .item-card {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 400px) {
   .item-list {
     grid-template-columns: 1fr;
+    max-width: 350px;
+    gap: 1rem;
+  }
+  .item-card {
+    max-width: 100%;
   }
 }
 
