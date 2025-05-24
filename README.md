@@ -30,15 +30,6 @@ Esta aplicación simula una experiencia de compra real y completa, aplicando bue
 - **Git & GitHub** – Control de versiones y repositorio.
 - **VS Code** – Editor de código.
 
-## Características principales
-
-- Navegación por categorías (Hardware, Accesorios, Decoración)
-- Detalle de productos y filtrado por categoría
-- Carrito de compras con persistencia
-- Responsive design para computadoras, tablets y celulares
-- Footer con acceso rápido a secciones y subcategorías
-- Sistema de ventas con relación entre entidades: Cliente, Producto, Venta, DetalleVenta
-
 ## Instalación
 
 Clona el repositorio:
@@ -59,10 +50,6 @@ Ejecuta la aplicación:
 ```bash
 npm run dev
 ```
-
-## Capturas de pantalla
-
-_Añade aquí capturas del home, carrito, detalle de producto, etc._
 
 ## Estructura del proyecto
 
