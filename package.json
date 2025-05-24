@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://ImanolPeralta.github.io/Segunda-PreEntrega-React-Coder",
+  "homepage": "https://imanolperalta.github.io/The-Dev-Store-PF-ReactJS",
   "dependencies": {
     "antd": "^5.24.7",
     "firebase": "^11.7.3",
