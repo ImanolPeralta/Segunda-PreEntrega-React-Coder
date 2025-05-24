@@ -48,7 +48,7 @@ if (subcategoryId) {
   let fetchFunction;
   let id;
 
-  setLoading(true); // empezar carga
+  setLoading(true);
 
   if (subcategoryId) {
     fetchFunction = getProductsBySubcategory;
@@ -68,7 +68,7 @@ if (subcategoryId) {
       console.error(error);
     })
     .finally(() => {
-      setLoading(false); // terminar carga
+      setLoading(false);
     });
 }, [categoryId, subcategoryId]);
 

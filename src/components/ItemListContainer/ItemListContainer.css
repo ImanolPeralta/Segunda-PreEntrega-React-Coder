@@ -4,12 +4,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.7); /* fondo semitransparente */
-  backdrop-filter: blur(4px);           /* desenfoque */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;                         /* encima de todo */
+  z-index: 1000;
   animation: fadeIn 0.3s ease-in-out;
 }
 

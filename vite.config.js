@@ -5,6 +5,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Segunda-PreEntrega-React-Coder/', // 👈 esto es clave
   plugins: [react()],
   resolve: {
     alias: {

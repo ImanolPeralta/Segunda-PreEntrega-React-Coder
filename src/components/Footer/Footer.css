@@ -1,4 +1,4 @@
-/* Footer general */
+/* Estilos Footer.css */
 .footer-container {
     background-color: #1E2A38;
     color: white;
@@ -71,6 +71,8 @@
     margin-top: 2rem;
 }
 
+/* Responsive Design */
+
 @media (max-width: 1024px) {
     .footer-content {
     grid-template-columns: 1fr 1fr;
@@ -117,25 +119,25 @@
 }
 
 @media (max-width: 480px) {
-  .footer-container {
+    .footer-container {
     padding: 1rem 1.5rem;
-  }
+    }
 
-  .footer-subheading,
-  .footer-heading {
+    .footer-subheading,
+    .footer-heading {
     font-size: 0.9rem;
-  }
+    }
 
-  .footer-link {
+    .footer-link {
     font-size: 0.85rem;
-  }
+    }
 
-  .socials a {
+    .socials a {
     font-size: 1.2rem;
     margin: 0.3rem;
-  }
+    }
 
-  .footer-content {
+    .footer-content {
     gap: 1.2rem;
-  }
+    }
 }

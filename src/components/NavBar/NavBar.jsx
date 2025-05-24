@@ -29,13 +29,12 @@ const NavBar = () => {
     setIsMenuOpen(false);
   };
 
-  // Detecta ancho de pantalla y cambia el modo del menú
   useEffect(() => {
     const updateMenuMode = () => {
       setMenuMode(window.innerWidth <= 768 ? 'inline' : 'horizontal');
     };
 
-    updateMenuMode(); // establecer al cargar
+    updateMenuMode();
     window.addEventListener('resize', updateMenuMode);
     return () => window.removeEventListener('resize', updateMenuMode);
   }, []);

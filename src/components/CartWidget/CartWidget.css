@@ -1,9 +1,11 @@
+/*Estilos CartWidget.css*/
+
 .cart-widget {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5D9CEC; /* Azul suave */
+    background-color: #5D9CEC;
     border-radius: 50%;
     padding: 0.8rem;
     width: 50px;
@@ -14,16 +16,16 @@
 }
 
 .cart-widget:hover {
-    transform: scale(1.1); /* Efecto de zoom */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Más sombra al hacer hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .cart-icon {
-    font-size: 1.8rem; /* Tamaño del ícono */
+    font-size: 1.8rem;
     color: white;
 }
 
-/* RESPONSIVE DESIGN - cart-widget */
+/* Responsive Design */
 @media (max-width: 768px) {
   .cart-widget {
     width: 45px;

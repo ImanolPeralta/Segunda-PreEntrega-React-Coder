@@ -1,4 +1,4 @@
-/* Fuentes personalizadas */
+/* Estilos generales CSS */
 @font-face {
     font-family: "Anta";
     src: url(./assets/fonts/Anta-Regular.ttf) format("truetype");
@@ -20,6 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     padding: 10px 20px;
     background-color: #1E2A38;
     font-family: "Saira", sans-serif;

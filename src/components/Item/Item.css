@@ -1,4 +1,4 @@
-/* Fuentes personalizadas */
+/* Estilos Item.css */
 @font-face {
   font-family: "Anta";
   src: url(./assets/fonts/Anta-Regular.ttf) format("truetype");
@@ -20,6 +20,8 @@
   grid-auto-rows: 1fr;
   transition: all 0.3s ease;
 }
+
+/* Responsive Design */
 
 @media (max-width: 900px) {
   .item-list {

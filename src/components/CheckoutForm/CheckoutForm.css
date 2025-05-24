@@ -1,3 +1,5 @@
+/* CheckoutForm.css */
+
 .checkout-form {
   max-width: 700px;
   margin: 2rem auto;
@@ -27,19 +29,16 @@
   letter-spacing: 0.5px;
 }
 
-/* Sección de inputs organizada tipo grilla */
 .checkout-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
 }
 
-/* Inputs que deben ocupar toda la fila */
 .checkout-full {
   grid-column: 1 / -1;
 }
 
-/* Estilos de inputs y select */
 .checkout-form input,
 .checkout-form select {
   width: 100%;
@@ -63,7 +62,6 @@
   box-shadow: 0 0 0 2px rgba(93, 156, 236, 0.2);
 }
 
-/* Errores */
 .checkout-form .error {
   color: #f87171;
   font-size: 0.9rem;
@@ -71,7 +69,6 @@
   margin-bottom: 1rem;
 }
 
-/* Botón */
 .checkout-form button {
   width: 100%;
   padding: 0.8rem;
@@ -96,7 +93,7 @@
   cursor: not-allowed;
 }
 
-/* RESPONSIVE extra */
+/* Responsive Design */
 @media (max-width: 480px) {
   .checkout-form {
     padding: 1.5rem;

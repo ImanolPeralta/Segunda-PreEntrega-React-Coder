@@ -1,17 +1,17 @@
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import { CartProvider } from "./context/CartContext";
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
-import SearchResults from './components/SearchResults/SearchResults'; // ✅ ya lo tenías importado
+import SearchResults from './components/SearchResults/SearchResults';
 
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <CartProvider>
           <NavBar />
           <Routes>
@@ -30,7 +30,7 @@ const App = () => {
           </Routes>
           <Footer />
         </CartProvider>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };

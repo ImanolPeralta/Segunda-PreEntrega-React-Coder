@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getTopProducts } from "../services/firebase/productService"; // Ajustá la ruta si es necesario
-import Item from "../Item/Item"; // Este es tu componente
+import { getTopProducts } from "../services/firebase/productService";
+import Item from "../Item/Item";
 import "../../styles.css";
 
 const SearchResults = () => {

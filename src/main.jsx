@@ -1,4 +1,3 @@
-// ✅ Todas las imports van arriba
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
@@ -7,7 +6,6 @@ import App from './App.jsx'
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
-// ✅ Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyCvTIPMCB9pDdABWRD02iGZb7aCoqOT2_M",
   authDomain: "the-dev-store-aab65.firebaseapp.com",
@@ -17,11 +15,9 @@ const firebaseConfig = {
   appId: "1:311935800552:web:380e249751183863dc655d"
 }
 
-// ✅ Inicializar Firebase y exportar db
 const app = initializeApp(firebaseConfig)
 export const db = getFirestore(app)
 
-// ✅ Finalmente renderizar
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

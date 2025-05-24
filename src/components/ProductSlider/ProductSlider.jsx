@@ -1,12 +1,13 @@
-// components/ProductSlider.jsx
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const base = import.meta.env.BASE_URL;
+
 const images = [
-  "/the dev store 1.png",
-  "/the dev store 2.png",
-  "/the dev store 3.png",
+  `${base}the-dev-store1.png`,
+  `${base}the-dev-store2.png`,
+  `${base}the-dev-store3.png`,
 ];
 
 export default function ProductSlider() {

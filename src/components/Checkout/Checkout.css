@@ -1,3 +1,5 @@
+/* Estilos Checkout.css */
+
 .order-confirmation {
   max-width: 480px;
   margin: 50px auto;
@@ -43,7 +45,7 @@
   }
 }
 
-/* RESPONSIVE DESIGN - order-confirmation */
+/* Responsive Design */
 @media (max-width: 768px) {
   .order-confirmation {
     max-width: 90%;

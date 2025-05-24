@@ -1,4 +1,4 @@
-/* Fuentes personalizadas */
+/* Estilos ItemDetail.css */
 @font-face {
   font-family: "Anta";
   src: url(./assets/fonts/Anta-Regular.ttf) format("truetype");
@@ -10,7 +10,6 @@
   font-display: swap;
 }
 
-/* --- CSS base (tu código original) --- */
 .CardItem {
   max-width: 600px;
   margin: 2rem auto;
@@ -87,9 +86,8 @@ section {
   transform: scale(1.05);
 }
 
-/* --- RESPONSIVE --- */
+/* Responsive Design */
 
-/* Tablets (ancho hasta 1024px) */
 @media (max-width: 1024px) {
   .CardItem {
     max-width: 90%;
@@ -120,7 +118,6 @@ section {
   }
 }
 
-/* Móviles (ancho hasta 480px) */
 @media (max-width: 480px) {
   .CardItem {
     max-width: 100%;
@@ -135,7 +132,7 @@ section {
   }
 
   .ItemImg {
-    height: auto; /* para que la imagen mantenga proporción natural */
+    height: auto;
     max-height: 250px;
     margin-bottom: 0.8rem;
   }
@@ -158,8 +155,8 @@ section {
   .Option {
     width: 100%;
     font-size: 1rem;
-    padding: 0.6rem 1rem;  /* padding horizontal para que no se vea tan apretado */
-    box-sizing: border-box; /* para incluir padding en el ancho */
+    padding: 0.6rem 1rem;
+    box-sizing: border-box;
   }
 }
 

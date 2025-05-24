@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "react-scripts start",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://ImanolPeralta.github.io/preentrega1-react-peralta",
+  "homepage": "https://ImanolPeralta.github.io/Segunda-PreEntrega-React-Coder",
   "dependencies": {
     "antd": "^5.24.7",
     "firebase": "^11.7.3",

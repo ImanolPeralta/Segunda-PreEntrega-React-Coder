@@ -1,3 +1,5 @@
+/* Estilos ItemCount.css */
+
 .Counter {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,7 @@
   max-width: 200px;
   margin: 0 auto;
   padding: 1rem;
-  width: 100%; /* usa todo el ancho disponible */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -18,7 +20,7 @@
   justify-content: center;
 }
 
-.button { /* Cambié a minúsculas */
+.button {
   background-color: #5D9CEC;
   color: #fff;
   border: none;
@@ -31,7 +33,7 @@
   min-width: 50px;
   text-align: center;
   flex-shrink: 0;
-  box-sizing: border-box; /* agregué */
+  box-sizing: border-box;
 }
 
 .button:hover {
@@ -54,7 +56,7 @@
   user-select: none;
 }
 
-/* Responsividad: para pantallas pequeñas */
+/* Responsive Design */
 @media (max-width: 480px) {
   .Counter {
     max-width: 150px;

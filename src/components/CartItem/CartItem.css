@@ -1,3 +1,5 @@
+/* Estilos de CartItem.css */
+
 .cart-item {
     display: flex;
     align-items: center;
@@ -72,7 +74,7 @@
     transform: scale(1.1);
 }
 
-/* RESPONSIVE DESIGN - cart-item */
+/* Responsive Desing */
 @media (max-width: 768px) {
   .cart-item {
     flex-direction: column;
