@@ -5,7 +5,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/The-Dev-Store-PF-ReactJS/', // 👈 esto es clave
+  base: '/The-Dev-Store-PF-ReactJS/',
   plugins: [react()],
   resolve: {
     alias: {
